@@ -1,0 +1,10 @@
+<br/><h1>La bienvenue à toi !</h1>
+<h5>Tu trouveras la liste des potins ci-dessous et, d'ailleurs, toi aussi tu peux <a href="/gossips/new/">en ajouter un</a> si tu veux ;)</h5><br/>
+
+
+<% @potins.each do |potin| %>
+  <p>
+    <%= link_to potin.title, potin_path(potin.id), :class => "btn btn-info my-2 my-sm-0" %><br>
+    de <%= potin.user.first_name %>
+  </p>
+<% end %>
