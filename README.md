@@ -1,6 +1,6 @@
 # Bienvenue
 
-### **Qu'y a-t-il dans ce répo ?**
+### Qu'y a-t-il dans ce répo ?
 
 * Un site web qui tourne avec Ruby on Rails
 * Une db à remplir via le seed
