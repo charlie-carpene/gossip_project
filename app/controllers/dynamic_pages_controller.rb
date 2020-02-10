@@ -1,6 +1,5 @@
 class DynamicPagesController < ApplicationController
   def welcome
-    @name = User.find(params[:id])
   end
 
   def show_potin

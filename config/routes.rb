@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'static_pages/new_potin'
   get 'user/:user', to: 'dynamic_pages#user', as: 'user'
   get 'show_potin/:id',  to: 'dynamic_pages#show_potin', as: 'potin'
   get 'dynamic_pages/welcome'
@@ -6,4 +7,11 @@ Rails.application.routes.draw do
   get 'static_pages/contact'
   get 'static_pages/team'
   get 'home', to: 'static_pages#home'
+
+
+  post 'static_pages/new_potin' do
+    Potin.new(params["gossip_author"], params["gossip_content"]).save
+    redirect '/'
+  end
+
 end

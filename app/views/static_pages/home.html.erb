@@ -1,5 +1,5 @@
 <br/><h1>La bienvenue à toi !</h1>
-<h5>Tu trouveras la liste des potins ci-dessous et, d'ailleurs, toi aussi tu peux <a href="/gossips/new/">en ajouter un</a> si tu veux ;)</h5><br/>
+<h5>Tu trouveras la liste des potins ci-dessous et, d'ailleurs, toi aussi tu peux <%= link_to "en ajouter un", static_pages_new_potin_path %> si tu veux ;)</h5><br/>
 
 
 <% @potins.each do |potin| %>
